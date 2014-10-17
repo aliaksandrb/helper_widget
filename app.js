@@ -9,6 +9,7 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.get('/', routes.index);
+app.get('/get_widget', routes.get_widget);
 
 var server = app.listen(3000, function() {
     console.log('-----Listening on port %d', server.address().port);
