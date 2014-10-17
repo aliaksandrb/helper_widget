@@ -12,7 +12,7 @@ module.exports = function() {
                      res.end("Some problems on the HelperWidget");
                  } else {
                      res.writeHead(202, { "Content-type": "text/javascript" });
-                     res.end(data);
+                     res.end(data + ';console.log(\'' + req.originalUrl + '\');');
                  }
              });
         }
