@@ -1,0 +1,15 @@
+{
+  "name": "helper_widget",
+  "version": "0.0.1",
+  "private": true,
+  "description": "An application that allows to embed WEBRTC video widget on your site",
+  "author": "Aliaksandr Buhayeu <aliaksandr.buhayeu@gmail.com>",
+  "dependencies": {
+    "express": "~4.9.7",
+    "morgan": "~1.4.0"
+  },
+  "engines": {
+    "node": "~0.10.25"
+  },
+  "devDependencies": {}
+}
