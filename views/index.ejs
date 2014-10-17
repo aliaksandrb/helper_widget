@@ -10,17 +10,28 @@
       <h1>Hello Hackathon!</h1>
       <video controls autoplay></video>
     </main>
-    <script async id='video-widget'>
-        var scriptTag = document.createElement('script');
-        scriptTag.type = 'text/javascript';
-        scriptTag.async = true;
-        scriptTag.src = '/get_widget';
 
-        var container = document.getElementById('video-widget');
-        container.parentNode.insertBefore(scriptTag, container);
+    <script async id='video-widget'>
+      (function() {
+          function loadWidget() {
+              var scriptTag = document.createElement('script'),
+                  container = document.getElementById('video-widget');
+
+              scriptTag.type = 'text/javascript';
+              scriptTag.async = true;
+              scriptTag.src = '/get_widget';
+
+              container.parentNode.insertBefore(scriptTag, container);
+          }
+
+          if (window.attachEvent) {
+              window.attachEvent('onload', loadWidget);
+          } else {
+              window.addEventListener('load', loadWidget, false);
+          }
+      })();
     </script>
 
-    <script src="javascripts/main.js"></script>
   </body>
 </html>
 
