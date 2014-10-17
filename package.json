@@ -6,7 +6,8 @@
   "author": "Aliaksandr Buhayeu <aliaksandr.buhayeu@gmail.com>",
   "dependencies": {
     "express": "~4.9.7",
-    "morgan": "~1.4.0"
+    "morgan": "~1.4.0",
+    "ejs": "~1.0.0"
   },
   "engines": {
     "node": "~0.10.25"

@@ -5,6 +5,7 @@ var express = require('express'),
 
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
+app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.get('/', routes.index);
